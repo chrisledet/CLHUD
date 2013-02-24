@@ -6,7 +6,7 @@ Simple HUD library for iOS.
 
 ### Usage
 
-To start using CLHUD, copy all the files inside the `Classes` directory into your Xcode project.
+To start using CLHUD, copy all the files inside the [Classes](https://github.com/chrisledet/CLHUD/tree/master/Classes) directory into your Xcode project.
 
 Then import the CLHUD header file inside your code:
 
