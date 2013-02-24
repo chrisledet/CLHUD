@@ -7,9 +7,9 @@
 //
 
 #import "IMViewController.h"
+#import "CLHUD.h"
 
 @interface IMViewController ()
-
 @end
 
 @implementation IMViewController
@@ -17,13 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    CLHUD* hud = [[CLHUD alloc] initWithText:@"Completed"];
+    hud.textFont = [UIFont fontWithName:@"Courier" size:20.0f];
+    [hud displayOnView:self.view for:21.0f];
+//    sleep(3);
+//    [hud displayOnView:self.view];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

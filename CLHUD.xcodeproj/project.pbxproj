@@ -18,6 +18,7 @@
 		EA55D61C16D6D427006408E0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA55D61B16D6D427006408E0 /* Default-568h@2x.png */; };
 		EA55D61F16D6D427006408E0 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA55D61E16D6D427006408E0 /* IMViewController.m */; };
 		EA55D62216D6D427006408E0 /* IMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA55D62016D6D427006408E0 /* IMViewController.xib */; };
+		EA55D62B16D6D5C3006408E0 /* CLHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EA55D62A16D6D5C3006408E0 /* CLHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		EA55D61D16D6D427006408E0 /* IMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
 		EA55D61E16D6D427006408E0 /* IMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
 		EA55D62116D6D427006408E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IMViewController.xib; sourceTree = "<group>"; };
+		EA55D62916D6D5C3006408E0 /* CLHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLHUD.h; path = Classes/CLHUD.h; sourceTree = "<group>"; };
+		EA55D62A16D6D5C3006408E0 /* CLHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLHUD.m; path = Classes/CLHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		EA55D5F916D6D427006408E0 = {
 			isa = PBXGroup;
 			children = (
+				EA55D62816D6D5A7006408E0 /* Classes */,
 				EA55D60B16D6D427006408E0 /* CLHUD */,
 				EA55D60416D6D427006408E0 /* Frameworks */,
 				EA55D60316D6D427006408E0 /* Products */,
@@ -105,6 +109,15 @@
 				EA55D61B16D6D427006408E0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA55D62816D6D5A7006408E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EA55D62916D6D5C3006408E0 /* CLHUD.h */,
+				EA55D62A16D6D5C3006408E0 /* CLHUD.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				EA55D61216D6D427006408E0 /* main.m in Sources */,
 				EA55D61616D6D427006408E0 /* IMAppDelegate.m in Sources */,
 				EA55D61F16D6D427006408E0 /* IMViewController.m in Sources */,
+				EA55D62B16D6D5C3006408E0 /* CLHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
