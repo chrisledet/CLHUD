@@ -1,5 +1,5 @@
 /*
- CLHUD.h
+ CLHUDAppDelegate.h
  CLHUD
  Created by Chris Ledet on 2/21/13.
  Copyright (c) 2012 Chris Ledet
@@ -25,17 +25,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CLHUD : UIView
+@class CLHUDViewController;
 
-@property (nonatomic, copy)   NSString* text;
-@property (nonatomic, strong) UIFont*   textFont;
+@interface CLHUDAppDelegate : UIResponder <UIApplicationDelegate>
 
-/* Initializers*/
-- (id)initWithText:(NSString*)text;
-- (id)initWithText:(NSString*)text andFont:(UIFont*)textFont;
-
-/* Display */
-- (void)displayOnView:(UIView*)view;
-- (void)displayOnView:(UIView*)view for:(float)secs;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CLHUDViewController *viewController;
 
 @end

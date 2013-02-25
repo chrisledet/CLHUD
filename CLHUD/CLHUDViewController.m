@@ -1,5 +1,5 @@
 /*
- CLHUD.h
+ CLHUDViewController.m
  CLHUD
  Created by Chris Ledet on 2/21/13.
  Copyright (c) 2012 Chris Ledet
@@ -20,22 +20,25 @@
  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE.
+ THE SOFTWARE. 
 */
 
-#import <UIKit/UIKit.h>
+#import "CLHUDViewController.h"
+#import "CLHUD.h"
 
-@interface CLHUD : UIView
+@interface CLHUDViewController ()
+@end
 
-@property (nonatomic, copy)   NSString* text;
-@property (nonatomic, strong) UIFont*   textFont;
+@implementation CLHUDViewController
 
-/* Initializers*/
-- (id)initWithText:(NSString*)text;
-- (id)initWithText:(NSString*)text andFont:(UIFont*)textFont;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 
-/* Display */
-- (void)displayOnView:(UIView*)view;
-- (void)displayOnView:(UIView*)view for:(float)secs;
+    CLHUD* hud = [[CLHUD alloc] initWithText:@"Completed"];
+    hud.textFont = [UIFont fontWithName:@"Courier" size:20.0f];
+    [hud displayOnView:self.view for:21.0f];
+}
+
 
 @end
